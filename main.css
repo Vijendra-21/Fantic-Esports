@@ -1,0 +1,83 @@
+/*Home page CSS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    /*Specail classes*/
+    .paragraph {
+    max-width: fit-content;
+    font-family: 'Domine', serif;
+    font-size: large;
+    
+    }
+    
+    .capital {
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    }
+    
+    .center {
+    text-align: center;
+    }
+    
+    .right {
+    text-align: right;
+    }
+    
+    
+    /*Navbar */
+    .custom-logo:hover {
+    filter: drop-shadow(8px 8px 10px green);
+    }
+    
+    form {
+    font-family: 'Bree Serif', serif;
+    }
+
+    /*footer*/
+
+footer {
+    background: black;
+    color: white;
+    padding: 2px;
+    }
+    /*footer navigation*/
+.links-wrapper {
+    background: #141213;
+    }
+    
+    .footer-links {
+    list-style: none;
+    text-align: center;
+    }
+    
+    .footer-links a {
+    text-decoration: none;
+    color: #fff;
+    }
+    
+    @media (max-width:767px) {
+    .links-wrapper {
+    border-bottom: solid 1px #343434;
+    }
+    }
+    
+    .footer-links a:hover {
+    color: rgba(57, 99, 216, 0.856);
+    }
+    
+    @media (min-width:768px) {
+    .footer-links {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    }
+    
+    .separator-right {
+    border-right: solid 3px #3a3a3a;
+    }
+    }

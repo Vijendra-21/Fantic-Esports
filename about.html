@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!--icon-->
+    <script src="https://kit.fontawesome.com/433888fe69.js" crossorigin="anonymous"></script>
+    <!--Font Styles-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;400&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Domine&family=Slabo+27px&display=swap" rel="stylesheet">
+
+    <!-- Add our main  css -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!--Nav bar section-->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid my-1">
+            <a href="https://fanticesports.in/" class="custom-logo-link" rel="home"></a><img width="200" height="40"
+                src="https://fanticesports.in/wp-content/uploads/2021/05/cropped-LOGO-1.png" class="custom-logo"
+                alt="Fantic Esports" loading="lazy" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="teams.html">Teams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tournaments.html">Tournaments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex my-1">
+                    <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success me-2" type="submit"><i class="fa fa-search"></i></button>
+                    <!-- Button trigger modal -->
+                    <a class="btn btn-danger" data-bs-toggle="modal" href="#loginModal" role="button">Login</a>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+    <!--Specail modal            ---- login modal---->
+    <div class="modal fade" id="loginModal" aria-hidden="true" aria-labelledby="loginModalLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login Here</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address*</label>
+                            <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp"
+                                placeholder="Enter Your Registered Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password*</label>
+                            <input type="password" class="form-control" id="loginPassword"
+                                placeholder="Enter Your Password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <a class="mx-3" data-bs-toggle="modal" href="#forgotPasswordModal" role="button">Forgot password
+                            ?</a>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-success" data-bs-target="#signUpModal" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">SignUp Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--SignUp Modal-->
+    <div class="modal fade" id="signUpModal" aria-hidden="true" aria-labelledby="signUpModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signUpModal">SignUp Here</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="Name" class="form-label">Name*</label>
+                            <input type="name" class="form-control" id="Name" placeholder="Full Name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="Phone" class="form-label">Mobile*</label>
+                            <input type="Phone" class="form-control" id="Phone" placeholder="Mobile Number" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="Email" class="form-label">Email*</label>
+                            <input type="email" class="form-control" id="Email" placeholder="123@gmail.com" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="Password" class="form-label">Password*</label>
+                            <input type="password" class="form-control" id="Password" placeholder="Choose Your Password"
+                                required>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="Address" placeholder="Address Here....">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="iCity" class="form-label">City*</label>
+                            <input type="text" class="form-control" id="City" placeholder="eg. Sikar" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="state" class="form-label">State</label>
+                            <input class="form-control" list="datalistOptions" id="state" placeholder="Choose State...">
+                            <datalist id="datalistOptions">
+                                <option value="Rajasthan">
+                                <option value="Maharashtra">
+                                <option value="Uttar Pradesh">
+                                <option value="Tamil Nadu">
+                                <option value="Delhi">
+                            </datalist>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="Zip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="Zip" placeholder="eg. 332001">
+                        </div>
+                        <div class="col-12">
+                            <button onclick="popUp()" type="submit" class="btn btn-primary" id="SignUp">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-info" data-bs-target="#loginModal" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">Back to Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Reset Modal-->
+    <div class="modal fade" id="forgotPasswordModal" aria-hidden="true" aria-labelledby="forgotPasswordModal"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="forgotPasswordModal">Reset Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="col-md-12">
+                            <label for="forgotName" class="form-label" required>Name*</label>
+                            <input type="name" class="form-control" id="forgotName" placeholder="Registered Name"
+                                required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="forgotPhone" class="form-label">Mobile*</label>
+                            <input type="Phone" class="form-control" id="forgotPhone"
+                                placeholder=" Registered Mobile Number" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="forgotEmail" class="form-label">Email*</label>
+                            <input type="email" class="form-control" id="forgotEmail" placeholder="Registered Email"
+                                required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="forgotPassword" class="form-label">Password*</label>
+                            <input type="password" class="form-control" id="forgotPassword"
+                                placeholder="Choose Your Password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-2">Reset Now</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+     <!-- Certificate Section -->
+     <section class="certificate_area"> <!--style="display:none" -->
+        <div class=" container text-center pt-5 my-3">
+            <figure>
+                <img src="https://source.unsplash.com/1600x700/?about" alt="Certificate" class="img-fluid card-img-top">
+            </figure>
+            <h1 class="bg-light p-2 text-center">कार्य प्रगति पर है |</h1> 
+        </div>
+    </section>
+
+
+ <!--Footer Navigation-->
+ <section class="container-fluid links-wrapper d-flex justify-content-center">
+    <div class="row ">
+        <ul class="footer-links  pt-2">
+            <li class=" px-3 my-1 separator-right">
+                <a href="/privacy-policy">Privacy Policy</a>
+            </li>
+            <li class=" px-3 my-1 separator-right">
+                <a href="/partner-with-us">Partner With Us</a>
+            </li>
+            <li class=" px-3 my-1 separator-right">
+                <a href="/terms">Terms of Use</a>
+            </li>
+            <li class=" px-3 my-1 separator-right">
+                <a href="/careers">Careers</a>
+            </li>
+            <li class=" px-3 my-1">
+                <a href="/help">FAQs / Help</a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- Copyright Footer-->
+<footer class="d-flex justify-content-center">
+    <div>
+        &copy; Fantic_Esports_2021
+        | All rights reserved
+    </div>
+</footer>
+<!--sweet alert script-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- Bootstrap JavaScript: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
