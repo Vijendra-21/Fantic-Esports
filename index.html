@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#9d4edd">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantic_Esports</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!--icon-->
+    <script src="https://kit.fontawesome.com/433888fe69.js" crossorigin="anonymous"></script>
+    <!--Font Styles-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;400&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Domine&family=Slabo+27px&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
+     <!-- Add our home page css -->
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <!--Nav bar section-->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid my-1">
+            <a href="https://fanticesports.in/" class="custom-logo-link" rel="home"></a><img width="200" height="40"
+                src="https://fanticesports.in/wp-content/uploads/2021/05/cropped-LOGO-1.png" class="custom-logo"
+                alt="Fantic Esports" loading="lazy" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="teams.html">Teams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tournaments.html">Tournaments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex my-1">
+                    <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success me-2" type="submit"><i class="fa fa-search"></i></button>
+                    <!-- Button trigger modal -->
+                    <a class="btn btn-danger" data-bs-toggle="modal" href="#loginModal" role="button">Login</a>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+    <!--Specail modal            ---- login modal---->
+    <div class="modal fade" id="loginModal" aria-hidden="true" aria-labelledby="loginModalLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login Here</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address*</label>
+                            <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp"
+                                placeholder="Enter Your Registered Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password*</label>
+                            <input type="password" class="form-control" id="loginPassword"
+                                placeholder="Enter Your Password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <a class="mx-3" data-bs-toggle="modal" href="#forgotPasswordModal" role="button">Forgot password
+                            ?</a>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-success" data-bs-target="#signUpModal" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">SignUp Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--SignUp Modal-->
+    <div class="modal fade" id="signUpModal" aria-hidden="true" aria-labelledby="signUpModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signUpModal">SignUp Here</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="Name" class="form-label">Name*</label>
+                            <input type="name" class="form-control" id="Name" placeholder="Full Name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="Phone" class="form-label">Mobile*</label>
+                            <input type="Phone" class="form-control" id="Phone" placeholder="Mobile Number" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="Email" class="form-label">Email*</label>
+                            <input type="email" class="form-control" id="Email" placeholder="123@gmail.com" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="Password" class="form-label">Password*</label>
+                            <input type="password" class="form-control" id="Password" placeholder="Choose Your Password"
+                                required>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="Address" placeholder="Address Here....">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="iCity" class="form-label">City*</label>
+                            <input type="text" class="form-control" id="City" placeholder="eg. Sikar" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="state" class="form-label">State</label>
+                            <input class="form-control" list="datalistOptions" id="state" placeholder="Choose State...">
+                            <datalist id="datalistOptions">
+                                <option value="Rajasthan">
+                                <option value="Maharashtra">
+                                <option value="Uttar Pradesh">
+                                <option value="Tamil Nadu">
+                                <option value="Delhi">
+                            </datalist>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="Zip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="Zip" placeholder="eg. 332001">
+                        </div>
+                        <div class="col-12">
+                            <button onclick="popUp()" type="submit" class="btn btn-primary" id="SignUp">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-info" data-bs-target="#loginModal" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">Back to Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Reset Modal-->
+    <div class="modal fade" id="forgotPasswordModal" aria-hidden="true" aria-labelledby="forgotPasswordModal"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="forgotPasswordModal">Reset Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="col-md-12">
+                            <label for="forgotName" class="form-label" required>Name*</label>
+                            <input type="name" class="form-control" id="forgotName" placeholder="Registered Name"
+                                required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="forgotPhone" class="form-label">Mobile*</label>
+                            <input type="Phone" class="form-control" id="forgotPhone"
+                                placeholder=" Registered Mobile Number" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="forgotEmail" class="form-label">Email*</label>
+                            <input type="email" class="form-control" id="forgotEmail" placeholder="Registered Email"
+                                required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="forgotPassword" class="form-label">Password*</label>
+                            <input type="password" class="form-control" id="forgotPassword"
+                                placeholder="Choose Your Password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-2">Reset Now</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--main-->
+    <section class="container-fluid main main_bg">
+        <div class="container">
+            <h1 class="capital">Fantic Esports</h1>
+            <h2>
+                Participate in tournaments, watch livestreams,
+                chat with other gamers, discover content and a lot more! </h2>
+        </div>
+    </section>
+
+    <!--Youtube section-->
+    <section class="youtube py-2">
+        <div class="text-center">
+            <h1 class="display-4 capital">Our Channel</h1>
+            <hr class="w-25 mx-auto" style="height: 5px;border-width:0;color:magenta;">
+        </div>
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-lg-6 col-md-6 col-12 col-xxl-6 ">
+                    <iframe width="600" height="450" src="https://www.youtube.com/embed/B7xOExJj3XY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div
+                    class="col-lg-6 col-md-6 col-12 col-xxl-6 d-flex justify-content-center align-items-start flex-column">
+                    <a href="https://www.youtube.com/c/FANTICESPORTS/" target="_blank">
+                        <img width="200" height="45"
+                            src="https://fanticesports.in/wp-content/uploads/2021/05/cropped-LOGO-1.png"
+                            class="custom-logo" alt="Fantic Esports" loading="lazy" />
+                    </a>
+                    <h4>Subscribe Now</h4>
+                    <p class="paragraph">
+                        Watch your favourite streamers and interact with them. Get a chance to win amazing cash
+                        prizes
+                        as
+                        well.</p>
+                    <a href="https://www.youtube.com/c/FANTICESPORTS/" target="_blank">
+                        <button type="button" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            title="Know More About Us">YouTube <i class="fab fa-youtube"></i></button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--our Work-->
+    <section class="our-work pt-2">
+        <div class="text-center">
+            <h1 class="display-4 capital">Our work</h1>
+            <hr class="w-25 mx-auto" style="height: 5px;border-width:0;color:rgb(0, 255, 34);">
+        </div>
+        <div class="container">
+            <div class="row my-5">
+                <div
+                    class="col-lg-6 col-md-6 col-12 col-xxl-6 d-flex justify-content-center align-items-center flex-column">
+                    <div class=" logo-heading d-flex">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUwKNA85dLKc_7iylWdEV6TWOVwAlhChhp1g&usqp=CAU"
+                            alt="logo" height="40" width="37">
+                        <h2>Gaming Events</h2>
+                    </div>
+                    <p class="paragraph P1"> Organized online gaming has spread worldwide to encompass an
+                        ever-growing
+                        number of games, leagues, e-sports tournaments, and conventions.FANTIC e-sports is intimately
+                        familiar with all aspects of the gaming ecosystem.
+                        Each project, whether it's online, offline, or somewhere in between, presents its own
+                        challenges—and FANTIC e-sports has the power and flexibility to handle them all while securing
+                        fair-play between players.</p>
+                </div>
+                <div
+                    class="col-lg-6 col-md-6 col-12 col-xxl-6 d-flex justify-content-center align-items-center flex-column">
+                    <div class=" logo-heading d-flex">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB2FDISdykxEIkkse8YkN3xq4c6wm5M8B-FA&usqp=CAU"
+                            alt="logo" height="40" width="37">
+
+                        <h2>Player Management</h2>
+                    </div>
+                    <p class="paragraph P2"> India is the future of esports industry.we always try to find a talent
+                        which is hidden inside you and provide a stage to show your talent to the world.
+                        We are creatinga massive pool of players along with their data from which organisation can
+                        choose and make their teams. Players of a team are like the pillars of a building. Even if
+                        one of them is weak, the building will collapse.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--user  S t a t s  Section-->
+    <section id="stats" class="section-stats">
+        <div class="container stats-container">
+            <h4 class=" stats-section-title text-center">CONSTANTLY GROWING</h4>
+            <div class="stats-wrapper text-center mt-5">
+                <div class="d-flex flex-column">
+                    <img src="https://cdn.gamingmonk.com/home-page/icons/user.svg" alt="icon" height="18" />
+                    <span class=" stats-category mt-3 mb-2">Users</span>
+                    <span class="stats-fig">13000 +</span>
+                </div>
+                <div class="stats-middle d-flex flex-column">
+                    <img src="https://cdn.gamingmonk.com/home-page/icons/wallet.svg" alt="icon" height="18" />
+                    <span class=" stats-category mt-3 mb-2">Payouts</span>
+                    <span class="stats-fig">50,000 INR</span>
+                </div>
+                <div class="d-flex flex-column">
+                    <img src="https://cdn.gamingmonk.com/home-page/icons/tournament.svg" alt="icon" height="18" />
+                    <span class=" stats-category mt-3 mb-2">Tournaments</span>
+                    <span class="stats-fig">In Progress</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--media section-->
+    <section class="our_Supporters pt-2">
+        <div class="text-center">
+            <h1 class="display-4 capital">Our Supporter's</h1>
+            <hr class="w-25 mx-auto" style="height: 5px;border-width:0;color:rgb(38, 0, 255);">
+        </div>
+        <div class="container-fluid">
+            <div class="row my-5">
+                <div
+                    class="col-lg-4 col-md-6 col-12 col-xxl-2 d-flex justify-content-center align-items-center flex-column">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkSa8oUt69nTAlByXSZ4uIyYHmGKrbm4bezg&usqp=CAU"
+                        alt="logo" class="supporters m-2">
+                </div>
+                <div
+                    class="col-lg-4 col-md-6 col-12 col-xxl-2 d-flex justify-content-center align-items-center flex-column">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmhDICvARqNhyeT86fT5evr-25wjviV_ePxA&usqp=CAU"
+                        alt="logo" class="supporters m-2">
+                </div>
+                <div
+                    class="col-lg-4 col-md-6 col-12 col-xxl-2 d-flex justify-content-center align-items-center flex-column">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUidWV9j9d44N5afZO69wkYBYQ_hb1P81sig&usqp=CAU"
+                        alt="logo" class="supporters m-2">
+                </div>
+                <div
+                    class="col-lg-4 col-md-6 col-12 col-xxl-2 d-flex justify-content-center align-items-center flex-column">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgY3cJCq9uak97npDui6VtuaNKJBeEJZCgHQ&usqp=CAU"
+                        alt="logo" class="supporters m-2">
+                </div>
+                <div
+                    class="col-lg-4 col-md-6 col-12 col-xxl-2 d-flex justify-content-center align-items-center flex-column">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFfphDfKkMnIsShUESEexY7qbYhFWox8PWJg&usqp=CAU"
+                        alt="logo" class="supporters m-2">
+                </div>
+                <div
+                    class="col-lg-4 col-md-6 col-12 col-xxl-2 d-flex justify-content-center align-items-center flex-column">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdFrl_AZF8zAUm0ljSF768fe5aqXwWr8lWdQ&usqp=CAU"
+                        alt="logo" class="supporters m-2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--media section-->
+    <section class="footer-media pt-2">
+        <div class="text-center">
+            <h1 class="display-4 capital">Get in touch</h1>
+            <hr class="w-25 mx-auto" style="height: 5px;border-width:0;color:rgb(111, 0, 255);">
+        </div>
+        <div class="container">
+            <div class="row my-5">
+                <div
+                    class="col-lg-6 col-md-6 col-12 col-xxl-6 d-flex justify-content-center align-items-center flex-column">
+                    <!--<h2>Social</h2>-->
+                    <ul class="social py-2">
+                        <li>
+                            <a href="https://twitter.com/fantic_esports" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/hkYxsEzq" target="_blank">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtube.com/channel/UCy6CQyaKLSXPV1Nu5tPD2pA" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/fantic_esports" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="col-lg-6 col-md-6 col-12 col-xxl-6 d-flex justify-content-center align-items-center flex-column">
+                    <ul class="contact-links">
+                        <li class="py-1">
+                            <h6><i class="fas fa-edit"></i> Press Department</h6>
+                            <a>contact@fanticesports.in </a>
+                        </li>
+                        <li class="py-1">
+                            <h6> <i class="fas fa-bookmark"></i> Sponsership</h6>
+                            <a>contact@fanticesports.in </a>
+                        </li>
+
+                        <li class="py-1">
+                            <h6><i class="fab fa-hotjar"></i> Marketing</h6>
+                            <a>contact@fanticesports.in </a>
+                        </li>
+                        <li class="py-1">
+                            <h6><i class="fas fa-bell"></i> Media</h6>
+                            <a>contact@fanticesports.in </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Footer Navigation-->
+    <section class="container-fluid links-wrapper d-flex justify-content-center">
+        <div class="row ">
+            <ul class="footer-links  pt-2">
+                <li class=" px-3 my-1 separator-right">
+                    <a href="/privacy-policy">Privacy Policy</a>
+                </li>
+                <li class=" px-3 my-1 separator-right">
+                    <a href="/partner-with-us">Partner With Us</a>
+                </li>
+                <li class=" px-3 my-1 separator-right">
+                    <a href="/terms">Terms of Use</a>
+                </li>
+                <li class=" px-3 my-1 separator-right">
+                    <a href="/careers">Careers</a>
+                </li>
+                <li class=" px-3 my-1">
+                    <a href="/help">FAQs / Help</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Copyright Footer-->
+    <footer class="d-flex justify-content-center">
+        <div>
+            &copy; Fantic_Esports_2021
+            | All rights reserved
+        </div>
+    </footer>
+    <!--sweet alert script-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Bootstrap JavaScript: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+
+</body>
+
+</html>

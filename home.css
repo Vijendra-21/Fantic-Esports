@@ -1,0 +1,288 @@
+/*Home page CSS*/
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/*Specail classes*/
+.paragraph {
+max-width: fit-content;
+font-family: 'Domine', serif;
+font-size: large;
+
+}
+
+.capital {
+text-transform: uppercase;
+font-family: 'Playfair Display', serif;
+}
+
+.center {
+text-align: center;
+}
+
+.right {
+text-align: right;
+}
+
+
+/*Navbar */
+.custom-logo:hover {
+filter: drop-shadow(8px 8px 10px green);
+}
+
+form {
+font-family: 'Bree Serif', serif;
+}
+
+
+/*Top Main Section*/
+.main_bg {
+padding-top: 72px;
+background: url("https://fanticesports.in/wp-content/uploads/2021/05/unforgivable-sear-bg.jpg")no-repeat center center/cover;
+height: 550px;
+width: 100%;
+opacity: .90;
+
+}
+
+.main {
+
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+}
+
+.main h2 {
+font-family: 'Heebo', sans-serif;
+padding: 20px;
+}
+
+.main h1 {
+color: rgb(247, 4, 247);
+}
+
+/*Youtube section*/
+.youtube {
+height: 600px;
+background:
+url("https://images.unsplash.com/photo-1551817958-c5b51e7b4a33?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHlvdXR1YmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60")no-repeat
+center center/cover;
+
+}
+
+iframe {
+min-width: 95%;
+max-width: fit-content;
+max-height: 400px;
+}
+
+.youtube button {
+color: black;
+background-color: red;
+}
+
+.youtube img {
+filter: invert(100%);
+}
+
+.youtube img :hover {
+filter: drop-shadow(8px 8px 10px rgb(255, 5, 5));
+}
+
+
+/*Our work*/
+.logo-heading img {
+margin-right: 5px;
+}
+
+/*Media queries for responsive desired design P1 & P2 are respective classes of the paragraph*/
+.P1 {
+padding: 1rem;
+margin: 1rem;
+
+}
+
+.P2 {
+padding: 1.25rem;
+margin: 1rem;
+
+}
+
+@media (max-width:1205px) {
+
+.P2 {
+padding: 1.9rem;
+
+}
+}
+
+@media (max-width:767px) {
+
+.P1 {
+
+padding: 0;
+margin: 2px;
+
+}
+
+.P2 {
+
+padding: 0;
+margin: 2px;
+
+}
+}
+
+
+
+@media (max-width:767px) {
+.logo-heading {
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.youtube {
+height: 770px;
+}
+
+.social {
+display: flex;
+flex-direction: row;
+}
+
+.capital {
+font-size: 2.15rem;
+}
+
+/* .contact-links h6{
+text-align: center;
+}*/
+}
+
+/*footer*/
+
+footer {
+background: black;
+color: white;
+padding: 2px;
+}
+
+/*Our Supporters -------*/
+.supporters {
+height: 15rem;
+width: 14rem;
+border-radius: 25px;
+}
+
+/*social get in touch*/
+.social i {
+font-size: 35px;
+padding: 5px;
+margin: 4px;
+filter: invert(25%);
+}
+
+.footer-media ul {
+list-style-type: none;
+}
+
+
+/*Stats Section----*/
+.section-stats {
+background: linear-gradient(to bottom, rgba(20, 18, 19, 0.85) 0%, rgba(20, 18, 19, 0.85) 100%),
+url('https://cdn.gamingmonk.com/home-page/stats-bg.jpg');
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+color: white;
+}
+
+.stats-container {
+padding: 48px 0;
+}
+
+.stats-middle {
+margin: 48px 0;
+}
+
+.stats-section-title,
+.stats-category {
+font-size: 1.1rem;
+font-weight: bold;
+}
+
+.stats-fig {
+font-size: 0.8rem;
+font-weight: bold;
+}
+
+@media (min-width:768px) {
+.stats-container {
+padding: 100px 0;
+}
+
+.stats-wrapper {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: space-around;
+-webkit-justify-content: space-around;
+-ms-flex-pack: space-around;
+justify-content: space-around;
+}
+
+.stats-middle {
+margin: 0;
+}
+
+.stats-category {
+text-transform: uppercase;
+}
+}
+
+/*footer navigation*/
+.links-wrapper {
+background: #141213;
+}
+
+.footer-links {
+list-style: none;
+text-align: center;
+}
+
+.footer-links a {
+text-decoration: none;
+color: #fff;
+}
+
+@media (max-width:767px) {
+.links-wrapper {
+border-bottom: solid 1px #343434;
+}
+}
+
+.footer-links a:hover {
+color: rgba(57, 99, 216, 0.856);
+}
+
+@media (min-width:768px) {
+.footer-links {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+}
+
+.separator-right {
+border-right: solid 3px #3a3a3a;
+}
+}
